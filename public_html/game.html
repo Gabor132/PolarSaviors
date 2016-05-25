@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Polar Saviors - Contact</title>
+        <title>Polar Saviors - Donate</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="keywords" content="polar, bear, polar bear, ice, save, ice caps, global warming">
@@ -9,6 +9,10 @@
         <meta name="description" content="Save the polar bears">
         <link type="image/png" rel="icon"  href="resources/favicon.ico">
         <link type="text/css" rel="stylesheet" href="style/style.css">
+        <script src="script/constants.js"></script>
+        <script src="script/entities.js"></script>
+        <script src="script/comments.js"></script>
+        <script src="script/script.js"></script>
     </head>
     <body>
         <header>
@@ -29,21 +33,29 @@
                 </ul>
             </nav>
         </header>
-        <div id="MainContent">
+        <div id="MainContent" >
             <div id="mainImage">
                 <img src="mainImage3.jpg" alt=""/>
             </div>
-            <div id="contentContact" class="textContent">
-                <h1>Contact</h1>
+            <div class="textContent">
+                <h1> Save the polar bears! </h1>
                 <section>
-                    <h3>Cine sunt eu?</h3>
-                    <p>
-                        Numele meu este Gabor Dragos-Alexandru si am creat acest site ca proiect pentru
-                    cursul de Tehnici Web in cadrul facultati de Matematica si Informatica de la
-                    Universitatea din Bucuresti.
-                    Daca ai intrebari contacteaza-ma la adresa 
-                    <a href="mailto:gabordragos@gmail.com">gabordragos@gmail.com</a>
-                    </p>
+                    <canvas id="drawingBoard" width="600" height="300">
+                        Your browser does not suport canvas!
+                    </canvas>
+                </section>
+                <section>
+                    <div id="comment_section">
+                        <form id="comment_form">
+                            Email: <input id="input_email" name="email" type="email" ><br>
+                            Comment: <textarea id="input_content" name="content" cols="40" rows="3"></textarea><br>
+                            <input type="button" value="Submit" onclick = "onSubmitComment()">
+                        </form>
+                        <div class="comment">
+                            <h5 class="comment_email"><a href="mailto:gabordragos@gmail.com">mucibuci@gmail.com</a> says:</h5>
+                            <p class="comment_content">Fain joc!</p>
+                        </div>
+                    </div>
                 </section>
             </div>
         </div>
